@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+
+</head>
+ 
+<body>
+<p> 
+<label>上传图片</label> 
+<input class="ke-input-text" type="text" id="url" value="" readonly="readonly" /> 
+<input type="button" id="uploadButton" value="Upload" /> 
+</p> 
+<script type="text/javascript"> 
+$(function() { 
+$('.inp_fileToUpload').change(function() { 
+var formdata = new FormData(); 
+var v_this = $(this); 
+var fileObj = v_this.get(0).files; 
+url = "/upload/upload_json.ashx"; 
+//var fileObj=document.getElementById("fileToUpload").files; 
+formdata.append("imgFile", fileObj[0]); 
+jQuery.ajax({ 
+url : url, 
+type : 'post', 
+data : formdata, 
+cache : false, 
+contentType : false, 
+processData : false, 
+dataType : "json", 
+success : function(data) { 
+if (data.error == 0) { 
+v_this.parent().children(".img_upload").attr("src", data.url); 
+//$("#img").attr("src",data.url); 
+} 
+} 
+}); 
+return false; 
+}); 
+}); 
+</script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>帖子详情</title>
+	<link rel="stylesheet" type="text/css" href="styles/layout.css">
+	<link rel="stylesheet" type="text/css" href="styles/postdetail.css">
+	<link rel="stylesheet" type="text/css" href="styles/newpost.css">
+</head>
+<body>
+	<!-- 最上端导航栏 -->
+	<div class="userbar">
+		<ul>
+			
+			<li>
+				<a href="#" title="个人中心">
+					<img class="user_image" src="images/z.jpg" >
+					<span class="u_name">怎一心</span>
+				</a>
+				
+				<ul class="dropdown" style="display: none;">    
+					<li><a href="mypost.html">我的贴吧</a></li>    
+					<li><a href="newpost.html">发表新帖</a></li>    
+					    
+				</ul>
+			</li>
+				  
+			<li>
+					<a href="#" title="">
+						<img class="user_alert" title="我的消息" src="images/alert.png">
+					</a>
+			</li>
+			
+			<li>
+					<a href="#" id="login">注销</a>
+			</li>
+		</ul>
+	</div>
+
+	<!-- 中部 -->
+	<div class="con_out">
+		<!-- 图片 -->
+		<div class="con">
+			<img src="images/bg.jpg">
+		</div>
+		<!-- 内容 -->
+		<div class="con ">
+			<div class="con_left">
+					<div class="postdetail_title">
+						<p>暑假干什么去？开脑洞想想……</p>
+					</div>
+					<div class="postdetail_list">
+						<div class="postdetail_author">
+							<img class="" src="images/z.jpg" >
+							
+							<a>怎一心</a>
+						</div>
+						<div class="contect">
+							暑假这么长，这么长，干点什么好呢？
+							<br>
+							大家都有自己的计划了，有的健身，有的旅游，有的读补习班，我恶补下英语吧，从最头疼的单词开始！
+							<br>
+							唉，真不想动，正能量不足啊，大家给我加油打打气吧！
+							<br>
+							计划如下：
+							<br>
+							1.每天早上7:00-8:00 迈西背单词软件速记100个单词
+							<br>
+							2.整个白天，玩耍，暑假毕竟要有暑假的样子嘛。
+							<br>
+							3.晚上20:00-21:30 一部纯英文90分钟电视剧。
+							<br><br>
+							希望这样白痴的学习计划能够让我能够有力量坚持！大家给我加加油吧！
+							
+						</div>
+						<div class="postdetail_info">
+								<p>1楼</p>
+								<p>2016-07-19 01:23</p>
+								<a>回复(2)</a>
+						</div>
+					</div>
+					<div class="postdetail_list">
+						<div class="postdetail_author">
+							<img class="" src="images/z.jpg" >
+							
+							<a>怎一心</a>
+						</div>
+						<div class="contect">
+							暑假这么长，这么长，干点什么好呢？
+
+						</div>
+						<div class="postdetail_info">
+								<p>1楼</p>
+								<p>2016-07-19 01:23</p>
+								<a>回复(2)</a>
+						</div>
+					</div>
+
+					<div class="postdetail_list">
+						<div class="postdetail_author">
+							<img class="" src="images/z.jpg" >
+							
+							<a>怎一心</a>
+						</div>
+						<div class="contect">
+							暑假这么长，这么长，干点什么好呢？
+
+						</div>
+						<div class="postdetail_info">
+								<p>1楼</p>
+								<p>2016-07-19 01:23</p>
+								<a>回复(2)</a>
+						</div>
+					</div>
+					
+			</div>
+			<div class="con_right">
+				<span class="info_title">个人信息</span>
+				<div class="info_con">
+					<img class="info_icon" src="images/z.jpg">
+					<div class="info_body">
+						<p class="u_name">怎一心</p>
+						<p class="u_gender">男</p>
+						<p class="fans">粉丝：<a class="info_num">2</a></p>
+						<p class="fans">关注：<a class="info_num">2</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 登录窗口 -->
+	<div class="loginBox">
+				<h3 class="login_wel">欢迎登录</h3>
+				<form action="#" name="" method="post">
+					<div class="input_outer">
+						<span class="u_user"></span>
+						<input name="logname" class="text" placeholder="请输入用户名" >
+					</div>
+					<div class="input_outer">
+						<span class="us_uer"></span>
+						<input name="logpass" class="text" type="password" placeholder="输入密码">
+					</div>
+
+					<div class="sub">
+						<input name="savesid" value="0" class="checkbox" type="checkbox"><span>记住用户名</span>
+						<a href="">登录</a>
+					</div>
+					<a href="signup.html" id="signup">还没账号，立即注册</a>
+				</form>
+	</div>
+
+	<script src="scripts/jquery-1.11.1.min.js"></script>
+	<script src="scripts/dropdown.js"></script>
+	<script src="scripts/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+	<link rel="stylesheet" type="text/css" href="styles/signup.css">
+</head>
+<body>
+	<div class="signup_header">
+		
+	</div>
+
+	<div class="signup_body">
+		<div class="tab_line">
+			<a class="cur" href="">个人注册</a>
+			<span class="divider">|</span>
+			<a class="" href="">组织注册</a>
+		</div>
+		<!-- 左浮动 -->
+		<div class="sign_left">
+		<!-- 表单内容 -->
+			<form method="post" action="signup.php">
+				<!-- <div class="info_list">
+					<div class="tit">
+						昵称<sup>* </sup>
+					</div>
+					<div class="inp">
+						<input id="username" placeholder="请输入您的昵称" >
+					</div>
+				</div>-->
+				<div class="tit">
+					<p>昵称<sup>* </sup></p>
+					<p>密码<sup>* </sup></p>
+					<p>确认密码<sup>* </sup></p>
+					<p>性别</p>
+				</div>
+				<div class="inp">
+					<div><input type="text" id="username" name="usern" placeholder="请输入您的昵称" /></div>
+					<div><input type="password" id="passwd_1" name="userk" placeholder="请输入您的密码" /></div>
+					<div><input type="password" id="passwd_2" placeholder="请再次输入您的密码" /></div>
+					<div class="gender">
+						<label><input name="gender" type="radio" value="" />男</label> 
+						<label><input name="gender" type="radio" value="" />女</label>
+						<label><input name="gender" type="radio" value="" />保密</label> 
+					</div>
+					<div class="signup_sub">
+						<button href="" type="submit" value="submit">立即注册</button>
+					</div>
+				</div>
+
+			</form> 
+		</div>
+		<!-- 右浮动 -->
+		<div class="signup_right">
+			<p class="">已有帐号，<a href="">直接登录»</a></p>
+			<span>注册帮助</span>
+			<div class="reg_help">
+                    	<ul class="help_list">
+                        	<li><span>1.</span><a target="_blank" href="">注册操作指南</a></li>
+                            <li><span>2.</span><a target="_blank" href="">注册时昵称显示“已经被注册”如何处理?</a></li>
+                        </ul>
+                        <a target="_blank" href="">更多帮助»</a>
+                    </div>
+		</div>
+
+	</div>
+		
+
+<script src="scripts/jquery-1.11.1.min.js"></script>
+<script src="scripts/global.js"></script>
+<script src="scripts/signup.js"></script>
+
+</body>
+</html>

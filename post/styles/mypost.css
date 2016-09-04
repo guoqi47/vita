@@ -1,0 +1,101 @@
+/* 我的帖子tab */
+.tab_menu li { 
+	float:left; 
+	text-align:center; 
+	font-size: 16px;
+    height: 30px;
+    width: 104px;
+    line-height: 30px;
+	cursor:pointer; 
+	list-style:none; 
+	margin-right:4px; 
+	background:#F1F1F1;
+	border:1px solid #898989; 
+	border-bottom:none;
+	border-radius: 3px;
+}
+.tab_menu li.hover { 
+	background: url(../images/bg_tab.png);
+}
+.tab_menu li.selected { 
+	background: url(../images/bg_tab.png);
+	font-weight: bold;
+}
+.tab_box { 
+	clear:both; 
+	/* clear 属性规定元素的哪一侧(right,left)不允许其他浮动元素。 */
+	/* clear影响的永远只是自己.没法让他人去哪儿.只会让自己去哪儿 */
+}
+.hide{
+	display:none
+}
+.tab_box .mypost p{
+	display: inline;
+	/* a标签和span标签默认display属性均为inline，所以只设置p标签该属性即可 */
+}
+.myreply_list ul li{
+	border-bottom: 1px dotted #CBD2D8;
+	padding-bottom: 10px;
+}
+
+.myreply_list .icno_myreply{
+	float: left;
+	margin: 0 10px;
+}
+
+
+.myreply_list .myreply_con{
+	margin: 10px 0 5px 50px;
+	padding-top: 3px;
+
+}
+.myreply_con .reply_and_date{
+	margin-bottom: 17px;
+}
+.myreply_list .myreply_con span p{
+	display: inline;
+	font-size: 15px;
+}
+.myreply_list .myreply_con .reply_p{
+	color: #666;
+    font-size: 13px;
+}
+.myreply_list .myreply_con .replypost p{
+	display: inline;
+}
+.myreply_list .myreply_con .replypost{
+	background-color: #bcd8ef;
+	border-radius:7px;
+	margin-top: 5px;
+	padding: 12px 15px;
+	width: 515px;
+}
+.reply_and_date .postdate, .reply_and_date p{
+	display: inline-block;
+}
+.reply_and_date .postdate{
+	float: right;
+	font-size: 14px;
+    color: #7f7f7f;
+    margin-right: 10px;
+}
+.tab_menu{
+	overflow: hidden;
+	margin-bottom: 3px;
+}
+.tab_box .mypost ul li{
+	padding: 13px 5px;
+	border-bottom: 1px dotted #dbe1e6;
+    font-size: 15px;
+}
+.mypost ul li p{
+	color: #666;
+    font-size: 12px;
+    margin-left: 4px;
+}
+.mypost ul li span{
+	color: #666;
+    font-size: 14px;
+	margin-right: 10px;
+    float: right;
+}

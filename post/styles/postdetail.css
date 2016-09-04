@@ -1,0 +1,49 @@
+.postdetail_title{
+	padding: 10px 0 10px 10px; 
+	border-bottom: 1px solid #B3B3B3;
+}
+.postdetail_title p{
+	font-family: "Microsoft Yahei";
+	font-size: 17px;
+}
+.postdetail_author{
+	width: 130px;
+    float: left;
+    text-align: center;
+    background-color: #EEEEE0;
+    padding-bottom: 32797px;
+	margin-bottom: -32767px ;
+}
+.postdetail_author img{
+	border: 1px solid #CCC;
+    display: block;
+    height: 80px;
+    padding: 3px;
+    width: 80px;
+    margin: 15px auto;
+}
+.postdetail_author a{
+	color: #2d64b3;
+	font-size: 13px;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+}
+.postdetail_list{
+	overflow: hidden;
+	position: relative;
+	border-bottom: 1px solid #B3B3B3;
+}
+.postdetail_list .contect{
+	float: left;
+	width: 500px;
+	margin: 20px 15px 20px 15px;
+	padding-bottom: 30px;
+}
+.postdetail_info{
+	position: absolute;
+	right:5px; 
+	bottom:5px;
+}
+.postdetail_info p{
+	display: inline;
+}

@@ -1,0 +1,133 @@
+/*注册界面*/
+*{
+	margin: 0;
+    padding: 0;
+}
+ul, ol, li {
+    list-style: none;
+}
+a{
+	text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+body{
+	background: url(../images/repeat_bg.png);
+}
+.signup_header{
+	height: 164px;
+	width: 900px;
+	background: url(../images/bg_wave1.png);
+	margin: 0 auto;
+}
+.signup_body{
+	width: 900px;
+    margin: 0 auto 15px;
+    background-color: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.signup_body .tab_line{
+	padding: 24px 0 22px 40px;
+	
+}
+.tab_line a{
+	font-family: "Microsoft Yahei";
+	font-size: 22px;
+	color: #333;
+	text-decoration: none;
+}
+.tab_line .cur{
+	border-bottom: 3px solid #ffa00a;
+}
+.sign_left{
+	float: left;
+    width: 630px;
+    border-right: 1px solid #BFBFBF;
+        margin-bottom: 20px;
+}
+.sign_left .tit{
+	float: left;
+    text-align: right;
+    margin-left: 108px;
+    font-size: 16px;
+    margin-top: 3px;
+}
+.sign_left .tit p{
+	margin-bottom: 30px;
+}
+.sign_left .inp{
+	float: left;
+	margin-left: 10px;
+}
+.sign_left .inp div>input{
+	margin-bottom: 23px;
+	height: 27px;
+	width: 200px;
+	font-size: 14px;
+	border: 1px solid #ccc;
+    border-radius: 2px;
+}
+.sign_left .inp .signup_sub{
+	margin-top: 20px;
+    border-radius: 2px;
+}
+.sign_left .inp .signup_sub a{
+	display: block;
+	width: 196px;
+    padding: 10px 0 8px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 16px;
+    color: #FFF;
+    background: #FFA00A;
+    font-weight: bold;
+    text-align: center;
+}
+    
+/*右浮动*/
+.signup_right{
+	float: right;
+	margin-right: 20px;
+    width: 210px;
+}
+.signup_right p{
+	font-size: 14px;
+	margin-right: 20px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px dotted #ccc;
+}
+.signup_right p a{
+	font-size: 13px;
+	color: #0a8cd2;
+}
+.signup_right>span{
+	display: block;
+	font-size: 14px;
+
+}
+.signup_right .reg_help ul li{
+	font-size: 12px;
+	color: #0a8cd2;
+	margin-top: 8px;
+}
+.signup_right .reg_help>a{
+	display: block;
+    margin-top: 25px;
+    font-size: 12px;
+    color: #0a8cd2;
+    float: right;
+}
+/* 表单信息验证 */
+.Error{
+    background: url(../images/error.gif) no-repeat 0 center;
+	padding-left:25px;
+}
+/* 0表示从左一开始的位置显示图片 */
+.Success{
+    background: url(../images/success.gif) no-repeat 0 center;
+	padding-left:25px;
+}

@@ -1,0 +1,94 @@
+.title_fatie{
+	float: left;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 22px 22px 10px 10px;
+}
+.title_fatie .icons_fatie{
+	display: inline-block;
+	width: 14px;
+    height: 14px;
+    background: url(../images/icons_fatie.png);
+}
+.title_fatie p{
+	display: inline;
+}
+#inp_title{
+	margin-left: 10px;
+	display: block;
+	margin-top: 15px;
+}
+#inp_title input{
+	font-size: 14px;
+    width: 500px;
+    height: 30px;
+    padding: 0 9px;
+}
+.inp_border{
+	margin: 8px 0 8px 15px;
+	
+}
+.inp_border #inp_con textarea{
+	font-size: 14px;
+	line-height: 16px;
+	padding: 5px 4px;
+}
+.btn_fatie{
+	color: #fff;
+    background: #3e89fa;
+    padding: 7px 14px;
+    margin: 5px 0 20px 10px;
+    font-size: 12px;
+    border: 1px solid transparent;
+    border-bottom-color: #2b71d9;
+}
+/* 右侧个人信息栏 */
+.con_right .info_title{
+	float: left;
+	font-size: 12px;
+	line-height: 25px;
+	font-weight: bold;
+	border-bottom: solid 1px #d0dbed;
+	width: 100%;
+	margin: 0 5px;
+}
+.con_right  .info_con{
+	clear: both;
+	margin-top: 5px;
+}
+.con_right .info_icon{
+	float: left;
+    width: 64px;
+    height: 64px;
+    border: 1px solid #D4D4D4;
+    padding: 1px;
+	margin-top: 10px;
+	margin-left: 20px;
+    
+}
+
+/* clear影响的永远只是自己.没法让他人去哪儿.只会让自己去哪儿 */
+/* 所以只能给下面的信息内容加clear: both属性才起作用 */
+.info_con .info_body{
+	float: left;
+	margin: 9px 0 15px 18px;
+}
+.info_con .info_body .u_name{
+	color: #0449be;
+	font-weight: bold;
+	font-size: 15px;
+}
+.info_con .info_body .u_gender{
+	color: #999;
+	font-size: 12px;
+	margin-top: 6px;
+	margin-bottom: 13px;
+}
+.info_con .info_body .fans{
+	margin-top: 6px;
+	font-size: 13px;
+}
+.info_con .info_body .info_num{
+	color: #2d64b3;
+	font-size: 13px;
+}

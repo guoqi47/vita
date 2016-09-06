@@ -1,7 +1,8 @@
 <?php
 	header("Content-Type:text/html; charset=utf-8");
 	
- 	@ $db = new mysqli('localhost', 'root', 'wwsw', 'user');
+ 	/*@ $db = new mysqli('localhost', 'root', 'wwsw', 'user');*/
+  @ $db = new mysqli('103.250.15.189', 'a08300436584Eb', 'wwswwwsw', 'a08300436584eb');
  	if (mysqli_connect_errno()) {
 	     echo 'Error: Could not connect to database.  Please try again later.';
 	     exit;

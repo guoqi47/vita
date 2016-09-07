@@ -1,5 +1,5 @@
 <?php   
-$url = "http://bbs.lampbrother.net"; 
+$url = "http://www.guoqiproject.com/post/index.html"; 
 
 header("Content-Type:text/html; charset=utf-8");
   
@@ -27,11 +27,11 @@ header("Content-Type:text/html; charset=utf-8");
 ?> 
 <html>   
 <head>   
-<meta http-equiv="refresh" content="3;  
+<meta http-equiv="refresh" content="5;  
 url=<?php echo $url; ?>">   
 </head>   
 <body>   
-页面只停留一秒……   
+五秒后自动跳转......  
 </body> 
 </html>  
 

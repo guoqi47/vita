@@ -1,0 +1,359 @@
+*{
+	margin: 0;
+    padding: 0;
+}
+ul, ol, li {
+    list-style: none;
+}
+a{
+	text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* index-用户bar */
+.userbar {
+    position: absolute;
+    top: 1px;
+    right: 10px;
+    z-index: 2;
+    /* 用法：需设置的两部分在一父div下，然后设置z-index属性 */
+}
+.userbar>ul{
+	margin-top: 4px;
+	font-size: 14px;
+    font-family: "Helvetica Neue";
+}
+.userbar>ul>li {
+    float: left;
+    margin-left: 10px;
+    vertical-align:middle;
+}
+.userbar>ul>li>a{
+	 color: #2d64b3;
+	 font-weight: bold;
+}
+.userbar .user_image{
+	width: 21px;
+    height: 21px;
+    vertical-align:middle;
+    margin-right: 2px;
+}
+.userbar .u_name{
+	vertical-align:middle;
+}
+.userbar .dropdown{
+	background: white;
+}
+.userbar .dropdown li{
+	text-align: center;
+	line-height: 25px;
+	border-top: 1px dotted #ccc;
+}
+.userbar .user_alert{
+	width: 15px;
+    height: 16px;
+    margin-top: 4px;
+    margin-right: 4px;
+}
+#login{
+	line-height: 24px;
+}
+.con_out{
+	width: 100%;
+	margin-top: 34px;
+	background-color: rgba(62, 137, 250, 0.16);
+}
+.con_out .con{
+	width: 982px;
+    margin: 0 auto;
+	overflow: hidden;
+    border-left: 1px solid #e4e6eb;
+    border-bottom: 1px solid #e4e6eb;
+}
+.con_out .con .con_left{
+	float: left;
+	width: 731px;
+	background: url(../images/bg_con.jpg);
+}
+.con_out .con .con_right{
+	float: right;
+	width: 250px;
+}
+/* index-图片轮播*/
+.con_out .con .slider{
+	width: 980px;
+	height: 259px;
+	overflow: hidden;
+	position:relative;
+}
+.slider .imgbox, .slider .num{
+	position:absolute;
+}
+.imgbox img{ 
+	width:980px; 
+	height:259px;
+	display:block;
+}
+.imgbox li{
+	list-style:none;
+	display:inline;
+}
+.slider .num{ 
+	right:50%; 
+	bottom:5px;
+}
+.slider .num li{
+	display:inline;
+	cursor: pointer;
+} 
+.num li{
+	float: left;
+    width: 6px;
+    height: 6px;
+    cursor: pointer;
+    margin: 1px 2px;
+    border-radius: 3px;
+    border: 1px solid #000;
+    background-color: #F0F8FF;
+}
+.num li.on{
+	background-color: #FF7300;
+}
+/* index-帖子列表 */
+.con_left .con_left_list .reply{ /* span的display默认为inline */
+	float: left;
+	width: 50px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    margin: 1px 20px 5px 21px;
+    background: url(../images/reply.png);
+}
+.con_left .con_left_list .title{
+	float: left;
+    margin-top: 4px;
+}
+.con_left_list .post_con{
+	margin-left: 91px;
+    clear: left;
+}
+.post_con span.content{
+	color: #666;
+    font-size: 14px;
+    margin-bottom: 7px;
+    display: inline-block;
+}
+.con_left_list .post_con .author img{
+	width: 21px;
+    height: 21px;
+    vertical-align: middle;
+}
+.post_con .author a{
+	vertical-align: middle;
+    font-size: 15px;
+    color: #5d5c98;
+}
+.con_left_list .post_con .con_img img{
+	display: block;
+	
+}
+.post_con .time{
+    float: right;
+    margin-right: 10px;
+    vertical-align: top;
+    color: #999;
+    line-height: 22px;
+    font-size: 15px;
+}
+.post_con .author{
+    float: right;
+    margin-right: 10px;
+}
+.con_left_list{
+	padding-bottom: 8px;
+	border-bottom: 1px dotted #e4e6eb;
+	padding-top: 10px;
+	overflow: hidden;
+}
+/* 分页 */
+.page_list{
+	float: left;
+    margin: 20px 0 6px 129px;
+    font-size: 13.3px;
+}
+.page_list .page_item_current{
+	color: #3e89fa;
+}
+.page_list .page_item{
+	color: #666;
+	border: 1px solid #e6e6e6;
+	padding: 5px 9px;
+}
+/* 登录窗口 */
+.loginBox{
+	width: 415px;
+	height: 288px;
+	position: absolute;
+	border: 1px solid #6E665A;
+	border-radius: 5px;
+	background: #efefef;
+	padding-top: 10px;
+	z-index: 10000;
+	display: none;
+	left: 50%;
+	top: 50%;
+	margin-left: -215px;
+	margin-top: -140px;
+}
+.loginBox .login_wel{
+	text-align: center;
+    font: 20px "microsoft yahei";
+    margin-bottom: 27px;
+    margin-top: 11px;
+}
+.loginBox #login_title{
+	
+}
+.loginBox .close_btn{
+	float: right;
+    font-family: arial;
+    font-size: 27px;
+    color: #999;
+    text-decoration: none;
+    margin-right: 8px;
+    line-height: 9px;
+}
+.loginBox .sub{
+    margin: 26px 0 24px 80px;
+}
+.loginBox .sub a{
+	margin-left: 89px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+    background: #1874CD;
+    padding: 6px 15px;
+}
+.loginBox .sub a:hover{
+	text-decoration: none;
+}
+.loginBox #signup{
+	float: right;
+    margin-right: 10px;
+    text-decoration: underline;
+    font-size: 15px;
+}
+.input_outer {
+    height: 46px;
+    width: 300px;
+    border-radius: 50px;
+    border: 2px solid #4650b9;
+    margin: 10px auto;
+    /* border: rgba(255,255,255,0.2) 2px solid !important; */
+}
+.u_user {
+    width: 25px;
+    height: 25px;
+    background: url(../images/login.png);
+    background-position: -125px 0;
+    position: absolute;
+    margin: 12px 13px;
+}
+.us_uer {
+    width: 25px;
+    height: 25px;
+    background-image: url(../images/login.png);
+    background-position: -125px -34px;
+    position: absolute;
+    margin: 12px 13px;
+}
+.text {
+    width: 220px;
+    height: 46px;
+    outline: none;
+    display: inline-block;
+    font: 14px "microsoft yahei",Helvetica,Tahoma,Arial,"Microsoft jhengHei";
+    margin-left: 50px;
+    border: none;
+    background: none;
+    line-height: 46px;
+}
+.mask{
+	border:none;
+	width:100%;
+	height:100%;
+	background:#333;
+	opacity:0.6;
+	z-index:9999;
+	position:fixed;
+	top:0;
+	left:0;
+	display:none;
+}
+/* 右侧滚动栏 */
+.scrollNews{
+	width:290px;
+	height:120px;
+	line-height:20px;
+	overflow:hidden;
+	background:#FFFFFF;
+}
+.scrollNews li{
+	font-size: 13px;
+	height:20px;
+}
+.global_module { 
+	width:251px;
+	position:relative;
+	background:#EEEEEE;
+	padding-bottom:8px;
+}
+.module_up_down{ 
+	position:absolute; 
+	top:0; 
+	right:10px; 
+	cursor:pointer;
+}
+.news ul { 
+	padding-left: 8px;
+}
+.global_module p { 
+	height:26px; 
+	background:#3B5998;
+	color:#FFF; 
+	line-height:26px; 
+	text-indent:6px;
+}
+
+#login_info{
+	margin-left: 74px;
+    color: red;
+    font-size: 15px;
+    height: 20px;
+}
+/* footer */
+.footer {
+    line-height: 22px;
+    text-align: center;
+    margin-top: 40px;
+    color: #999;
+    font-size: 12.5px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-bottom: 20px;
+}
+.footer a{
+	text-decoration: none;
+	color: #999;
+}.
+.footer span{
+	margin: 0 10px;
+}
+#copyright{
+	margin-right: 10px;
+}
+.footer .divider{
+	margin: 0 6px;
+}

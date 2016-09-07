@@ -10,7 +10,7 @@
 	width: 130px;
     float: left;
     text-align: center;
-    background-color: #EEEEE0;
+    background-color: rgba(38, 182, 234, 0.06);
     padding-bottom: 32797px;
 	margin-bottom: -32767px ;
 }
@@ -31,13 +31,14 @@
 .postdetail_list{
 	overflow: hidden;
 	position: relative;
-	border-bottom: 1px solid #B3B3B3;
+	border-bottom: 1px solid #e0d9d9;
 }
 .postdetail_list .contect{
 	float: left;
 	width: 500px;
 	margin: 20px 15px 20px 15px;
 	padding-bottom: 30px;
+	font-size: 15.3px;
 }
 .postdetail_info{
 	position: absolute;
@@ -46,4 +47,12 @@
 }
 .postdetail_info p{
 	display: inline;
+	font-size: 14.5px;
+}
+.postdetail_info a{
+	font-size: 12.5px;
+}
+.con_right .right_info{
+	overflow: hidden;
+	background: url(../images/bg_con.jpg);
 }

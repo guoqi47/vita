@@ -16,8 +16,9 @@ header("Content-Type:text/html; charset=utf-8");
   $result = $db->query($query);
   
   if(!$result){
-    echo"注册不成功！";  
+    echo"系统繁忙，注册不成功，请稍后再试！";  
     echo"<a href='signup.html'>返回</a>";
+    exit();
   }else{
     echo"注册成功!";
   }
@@ -31,7 +32,7 @@ header("Content-Type:text/html; charset=utf-8");
 url=<?php echo $url; ?>">   
 </head>   
 <body>   
-五秒后自动跳转......  
+3秒后自动跳转......  
 </body> 
 </html>  
 

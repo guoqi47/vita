@@ -11,7 +11,7 @@
 			move_uploaded_file($_FILES["myfile"]["tmp_name"],$dir.$fileName);
 			$ret['file'] = '/'.$uploadDir.$fileName;
 		}
-		echo json_encode($ret);
+		/*echo json_encode($ret);*/
 	}
 	session_start();
 	$_SESSION['uploadDir']=$uploadDir.$fileName;

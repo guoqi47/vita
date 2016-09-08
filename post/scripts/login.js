@@ -76,16 +76,18 @@ $(function(){
 		//关闭
 		$(".close_btn").hover(function () { 
 			$(this).css({ color: 'black' }) 
-			}, function () { 
+			}, function () {
 				$(this).css({ color: '#999' }) })
 			.on('click', function () {
 				$(".loginBox").fadeOut("fast");
 				$("#mask").css({ display: 'none' });
 		});
 
-		$("#mask").on('click', function () {
+		/*$("#mask").on('click', function () {
 			$(".loginBox").fadeOut("fast");
 			$("#mask").css({ display: 'none' });
-		});
+		});*/
+
+		
 
 	});

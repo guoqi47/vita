@@ -1,19 +1,40 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>无标题文档</title>
+<html> 
+<head> 
+<style> 
+.hide{display:none;} 
+.con{width:500px;height:300px;background:#000;} 
+</style> 
+<title>点击弹出层 ，点击弹出层外区域关闭弹出层jquery特效</title> 
+<script type="text/javascript" src="http://jt.875.cn/js/jquery.js"></script> 
+<script type="text/javascript"> 
+$(document).ready(function() { 
+$("div.down").click(function(e) { 
+e.stopPropagation(); 
+$("div.con").removeClass("hide"); 
+}); 
+$("div.con a").click(function() { 
+$("div.con").addClass("hide"); 
+}); 
 
-</head>
- 
-<body>
-<div id="box">   
-<div id="float" class="div1">     
-这里写你网站的代码与标签    
-</div>   
+$(document).click(function() { 
+if (!$("div.con").hasClass("hide")) { 
+$("div.con").addClass("hide"); 
+} 
+}); 
+
+$("div.con").click(function (e) { 
+e.stopPropagation();//阻止事件向上冒泡 
+}); 
+
+
+}); 
+</script> 
+</head> 
+<body> 
+<div class="down">click</div> 
+<div class="con hide">show-area 
+<a style="color:#fff;">close</a> 
+
 </div> 
-<script>
-	
-</script>
-</body>
-</html>
+</body> 
+</html> 

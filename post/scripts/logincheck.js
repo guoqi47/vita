@@ -8,10 +8,6 @@ $(function(){
                         $("#login_info").html(data); // 把返回的数据添加到页面上
 					}
 				);
-
-			if($("#login_info").text() == "登录成功"){
-	   			alert("登录成功");
-	   		}
 	   	})
 	   	
 });
